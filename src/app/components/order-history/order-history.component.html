@@ -1,0 +1,17 @@
+<h3>Restaurant Faves</h3>
+<table border="1px">
+    <th>Description</th>
+    <th>Restaurant</th>
+    <th>Rating</th>
+    <th>Order again?</th>
+    <th>Action</th>
+    @for (item of allOrders; track item.id) {
+        <tr>
+            <td>{{item.description}}</td>
+            <td>{{item.restaurant}}</td>
+            <td>{{item.rating}}</td>
+            <td>{{item.favorite}}</td>
+            <td><button (click)="delete(item)">Delete</button></td>
+        </tr>
+    }
+</table>

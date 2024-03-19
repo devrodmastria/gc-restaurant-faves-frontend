@@ -1,0 +1,19 @@
+<br>
+<hr>
+<h4>New Order</h4>
+<form>
+    <label for="description">Description </label>
+    <input id="description" type="text" [(ngModel)]="newOrder.description">
+    <br>
+    <label for="restaurant">Restaurant </label>
+    <input id="restaurant" type="text" [(ngModel)]="newOrder.restaurant">
+    <br>
+    <label for="rating">Rating(1-5) </label>
+    <input id="rating" type="text" [(ngModel)]="newOrder.rating">
+    <br>
+    <label for="fave">Order again: </label>
+    <input id="fave" type="checkbox" [(ngModel)]="newOrder.favorite">
+    <br>
+    <input type="submit" value="Save">
+    
+</form>
